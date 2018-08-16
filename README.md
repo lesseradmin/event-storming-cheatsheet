@@ -1,10 +1,10 @@
-= Event Storming Workshop Cheat Sheet
+# Event Storming Workshop Cheat Sheet
 
 Event storming is a rapid design technique for software systems involving both technical staff and domain experts / business analysts. It best fits in a Domain Driven Design context and leans towards / prepares for Event Sourcing and CQRS. The technique was first introduced by Alberto Brandolini and picked up by Vaughn Vernon in Domain Driven Design Distilled. It is also taught as part of his iDDD Workshop series.
 
 This cheat sheet aims to provide a short opinionated summary of preparing and facilitating an Event Storming Workshop. It is not intended to give a complete introduction to the topic, prior knowledge on DDD and Event Storming is required to make responsible use of this document.
 
-== Required Material
+## Required Material
 
 * *Paper rolls* to create the modeling surface. Available e.g. at IKEA (Mala, http://www.ikea.com/de/de/catalog/products/80324072/ or at Amazon https://www.amazon.de/gp/product/B005OBO1LO)
 * *Sticky notes*. Vaughn Vernon recommends the 7,6 x 7,6 cm super sticky variety. You need the following colors: orange, light blue, pale yellow, green, pink, purple / red, lilac. I found the Post It collections Marrakesh (e.g. https://www.amazon.de/gp/product/B016OON3UO/) and Energy (e.g. https://www.amazon.de/gp/product/B006JCQJJY) put together work. Make sure you have plenty of them
@@ -13,7 +13,7 @@ This cheat sheet aims to provide a short opinionated summary of preparing and fa
 * *Bigger felt tip markers*. Standard flip chart markers work well. You can't go wrong with Neuland markers, e.g. https://de.neuland.com/marker-stifte/neuland-marker/neuland-no.one-keilspitze-2-6-mm-einzelfarben.html
 * *Adhesive tape*. Use gaffer tape to put up the paper roll and probably crepe tape to put up additional notes.
 
-== Preparation
+## Preparation
 
 Up front:
 
@@ -27,7 +27,7 @@ At the location:
 * Prepare the modeling space. Use paper rolls taped to a large wall. 1 m x 10 m should be considered the minimum size. Bigger is better. Be prepared for having to expand the space.
 * Lay out sticky notes and markers.
 
-== Execution
+## Execution
 
 Below you find the order Vaughn Vernon recommends. It is fine to add additional artefacts in a later step, but it is important to roughly adhere to the Event -> Command -> Aggregate -> boundaries -> view order.
 
@@ -49,7 +49,7 @@ Optional additions:
 * User personas
 * Read models
 
-== Reference
+## Reference
 
 The semantics of the various colors as mentioned in the text above are shown below for reference.
 
@@ -63,7 +63,7 @@ The semantics of the various colors as mentioned in the text above are shown bel
 * *Subdomains* - dashed lines
 * *Event Flow* - arrows
 
-== Further Information
+## Further Information
 
 * Vernon, Vaughn. “Ch. 7, Event Storming.” Domain-Driven Design Distilled, Addison-Wesley, 2016. - https://www.amazon.com/Domain-Driven-Design-Distilled-Vaughn-Vernon/dp/0134434420
 * Brandolini, Alberto. Introducing EventStorming. Leanpub, to be released, eventstorming.com/ - https://leanpub.com/introducing_eventstorming
