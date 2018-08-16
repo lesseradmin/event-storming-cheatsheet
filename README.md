@@ -53,15 +53,29 @@ Below you find the order Vaughn Vernon recommends. It is fine to add additional 
 
 The semantics of the various colors as mentioned in the text above are shown below for reference.
 
-* *Domain Events* - orange
-* *Commands* - light blue
-* *Aggregates* - yellow
+* *Domain Events* (orange)
+  * Cause reactions elsewhere in the system, and it’s often important to understand why those reactions occurred.
+* *Commands* (light blue - add stick person if command is initiated by user)
+  * Critical because they often represent user interactions. Adding user interactions to our event flow brings us towards modelling the complete cause-and-effect of our system.
+* *Aggregates* (yellow)
+  * Logically group various commands, events, and reactions together. This helps us craft software in a way that fully respects relationships within business processes. When we get to this level of detail, we can start to think in more specific terms of aggregate events and domain events.
 * *Issues* - red or purple
-* *User Roles / Personas* - yellow with stick figure
-* *Views* - green
-* *Bounded contexts* - solid line, names on pink notes
-* *Subdomains* - dashed lines
-* *Event Flow* - arrows
+  * Any problems that we can think of.
+* *User Roles / Personas* (yellow with stick figure)
+  * What are the different user roles? Examples could include administrator, end-user, etc.
+* *Views* (green)
+* *Bounded contexts* (solid line, names on pink notes)
+  * Used to create bulkheads within large, complex systems. Like bulkheads in a ship hull that prevents a breach from sinking the entire ship, a bulkhead in a system prevents unnecessary complexity from leaking outside the contextual boundary.
+  * Group related language, meaning, and culture. For instance, “Confirmation” within a Shipping context may mean something completely different than “Confirmation” within a Payment context. Bounded contexts help to avoid dreaded monsters like “Shipping Confirmation” from escaping their cage and wreaking havoc across the entire organization.
+  * By defining bounded contexts, we can begin to understand how subdomains of the system interact without needing to dive into the guts of code. The Shipping system may be a legacy J2EE app, the Payment system may be a modern system built in Akka, but they speak to each other purely in events.
+* *Subdomains* (dashed lines)
+* *Event Flow* (arrows)
+  * A single event isn’t very exciting, so we need to consider events in term of flow — events over time. To model a business process we simply arrange events from left-to-right in time sequence. That’s it! Sounds simple? It is. That’s the point. There’s no unnecessary ceremony between you, your team, and an interesting discussion that yields results. Once we have a linear sequence of events that occurs over time, we need to think about the cause of those events.
+  
+
+For high-level Event Storming, commands, events, and reactions give us enough building blocks to discuss the core of our system. We’ll eventually want to dive deeper into the realm of implementation. Once we get there we’ll need elements that help us model and define the structure of our system.
+
+
 
 ## Further Information
 
