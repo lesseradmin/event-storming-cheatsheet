@@ -31,18 +31,18 @@ At the location:
 
 Below you find the order Vaughn Vernon recommends. It is fine to add additional artefacts in a later step, but it is important to roughly adhere to the Event -> Command -> Aggregate -> boundaries -> view order.
 
-. Create or line out the legend so the semantics of the color notes / annotations is well understood by all participants.
-. Storm out _Domain Events_ on _orange_ stickies and place them on the modeling space in business process (= time) order. The name is a noun/verb combination in the past tense, e.g. `ItemOrdered`.
-. If _issues_ with the process or questions_ arise that are not immediately resolvable, mark them with _purple or red_ notes.
-. Some Domain Events will cause a _business process_ to run. Note the name of the process on a _lilac_ note and draw an arrow from the Event process to the process.
-.  When you feel you have captured most of the Domain Events, focus on the _Commands_ that create those Events. Put them on _light blue_ notes left to the Event they cause. Proceed from left to right on the timeline. The name is an action like `OrderItem`.
-. If a specific _user role_ performs the Command, note that on a _yellow_ note left below the Command. I like to draw stick figures to distinguish them.
-. When you think you have all Commands, note the _Aggregates_ on _yellow_ notes and place them a little higher between the Command that is executed on this Aggregate and the Events it causes. The name is a noun, like `Item`. If Aggregates are used multiple times, create copies and place them repeatedly on the timeline.
-. Draw your _Bounded Contexts_ (solid lines) and _Subdomains_ (dashed lines) onto the modeling surface. You should do this only when you feel you have understood the boundaries well enough. Name the contexts using _pink_ notes.
-. Draw arrows to show in which direction Events flow between your contexts.
-. Identify _Views_ required for the user to carry out tasks in your system. Place them on _green_ stickies below the Aggregates the operate on.
+* Create or line out the legend so the semantics of the color notes / annotations is well understood by all participants.
+* Storm out _Domain Events_ on _orange_ stickies and place them on the modeling space in business process (= time) order. The name is a noun/verb combination in the past tense, e.g. `ItemOrdered`.
+* If _issues_ with the process or questions_ arise that are not immediately resolvable, mark them with _purple or red_ notes.
+* Some Domain Events will cause a _business process_ to run. Note the name of the process on a _lilac_ note and draw an arrow from the Event process to the process.
+*  When you feel you have captured most of the Domain Events, focus on the _Commands_ that create those Events. Put them on _light blue_ notes left to the Event they cause. Proceed from left to right on the timeline. The name is an action like `OrderItem`.
+* If a specific _user role_ performs the Command, note that on a _yellow_ note left below the Command. I like to draw stick figures to distinguish them.
+* When you think you have all Commands, note the _Aggregates_ on _yellow_ notes and place them a little higher between the Command that is executed on this Aggregate and the Events it causes. The name is a noun, like `Item`. If Aggregates are used multiple times, create copies and place them repeatedly on the timeline.
+* Draw your _Bounded Contexts_ (solid lines) and _Subdomains_ (dashed lines) onto the modeling surface. You should do this only when you feel you have understood the boundaries well enough. Name the contexts using _pink_ notes.
+* Draw arrows to show in which direction Events flow between your contexts.
+* Identify _Views_ required for the user to carry out tasks in your system. Place them on _green_ stickies below the Aggregates the operate on.
 
-Optional additions:
+### Optional additions:
 
 * UI Mock Ups along with the views
 * Acceptance Test sketches for important tests
